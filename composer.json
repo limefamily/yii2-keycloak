@@ -1,0 +1,34 @@
+{
+    "name": "limefamily/yii2-keycloak",
+    "description": "keycloak OpenIdConnect client",
+    "type": "library",
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "tuzki",
+            "email": "tianzikuan@sina.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.13",
+        "yiisoft/yii2-authclient": "^2.2",
+        "yiisoft/yii2-redis": "^2.0",
+        "web-token/jwt-checker": ">=1.0 <3.0",
+        "web-token/jwt-signature": ">=1.0 <3.0",
+        "web-token/jwt-signature-algorithm-hmac": ">=1.0 <3.0",
+        "web-token/jwt-signature-algorithm-ecdsa": ">=1.0 <3.0",
+        "web-token/jwt-signature-algorithm-rsa": ">=1.0 <3.0",
+        "web-token/jwt-key-mgmt": ">=1.0 <3.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.0",
+        "codeception/verify": "~0.5.0 || ~1.1.0",
+        "codeception/specify": "~0.4.6",
+        "codeception/module-filesystem": "^1.0.0",
+        "codeception/module-yii2": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": { "limefamily\\OpenIdConnect\\": "src" }
+    }
+}
