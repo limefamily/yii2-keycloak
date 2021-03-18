@@ -22,12 +22,6 @@
         "web-token/jwt-key-mgmt": ">=1.0 <3.0"
     },
     "require-dev": {
-        "codeception/codeception": "^4.0",
-        "codeception/verify": "~0.5.0 || ~1.1.0",
-        "codeception/specify": "~0.4.6",
-        "codeception/module-filesystem": "^1.0.0",
-        "codeception/module-yii2": "^1.0.0",
-        "codeception/module-asserts": "^1.0.0"
     },
     "autoload": {
         "psr-4": { "limefamily\\OpenIdConnect\\": "src" }
