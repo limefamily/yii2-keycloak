@@ -1,17 +1,7 @@
 <?php
 
-namespace app\models;
-
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Signer\Hmac\Sha256;
-use Lcobucci\JWT\Validation\Constraint\IssuedBy;
+namespace limefamily\OpenIdConnect\example\models;
 use yii\base\BaseObject;
-use yii\base\InvalidConfigException;
-use yii\base\NotSupportedException;
-use Yii;
-use yii\httpclient\Exception;
-use yii\web\ForbiddenHttpException;
 use yii\web\IdentityInterface;
 
 /**

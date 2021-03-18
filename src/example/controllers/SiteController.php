@@ -1,8 +1,8 @@
 <?php
 
-namespace limefamily\OpenIdConnect\example;
+namespace limefamily\OpenIdConnect\example\controllers;
 
-use app\models\User;
+use limefamily\OpenIdConnect\example\models\User;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
