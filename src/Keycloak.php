@@ -87,7 +87,7 @@ class Keycloak extends OpenIdConnect
             $this->redis->del(self::getSessionStateKey($state));
         }
     }
-    private function getSsoSession() {
+    public function getSsoSession() {
         $state = $this->getSessionState();
         if (!empty($state)) {
             return $this->redis->get(self::getSessionStateKey($state));
