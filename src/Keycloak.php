@@ -105,7 +105,11 @@ class Keycloak extends OpenIdConnect
     public function getSessionState(){
         /** @var OAuthToken $token */
         $token = $this->getState('token');
-        return $token->getParam('session_state');
+        if (!empty($token)) {
+            return $token->getParam('session_state');
+        }else{
+           return null; 
+        }
     }
 
     /**
