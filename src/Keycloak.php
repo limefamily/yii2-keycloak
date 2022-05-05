@@ -133,7 +133,7 @@ class Keycloak extends OpenIdConnect
         if (!Yii::$app->user->getIsGuest()) {
             $client = self::getInstance();
             $client->removeSsoSession();
-            $logoutUrl = $client->logoutUrl. "?redirect_uri=". urlencode($redirect);
+            $logoutUrl = $client->logoutUrl. "?client_id=".$client->clientId."&redirect_uri=". urlencode($redirect);
             Yii::$app->user->logout();
             return Yii::$app->response->redirect($logoutUrl);
         }
